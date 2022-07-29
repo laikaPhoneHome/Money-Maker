@@ -42,12 +42,15 @@ let moneyOut = 0;
 if (currency === "pounds please"){
     let moneyMaker = (`KA-CHING! Heres £${moneyOut}, youre welcome.`)
     return moneyMaker;
+ 
 }else if (currency === "dollars please"){
     let moneyMaker = (`BEEP BEEP! Heres $${moneyOut}, Take it.`)
     return moneyMaker;
+ 
 }else if (currency === "euros please"){
     let moneyMaker = (`BURRRR! Heres €${moneyOut}, Dont spend it all at one place.`)
     return moneyMaker;
+ 
 }else if(currency.split(" ")[1] !== "please"){
     return "say please";
 }else if(!currency){
